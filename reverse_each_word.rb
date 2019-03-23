@@ -13,10 +13,10 @@ def reverse_each_word(str)
     rev_Arr << reverse(item)
   end
   
-  str.split(' ').collect do |item|
+  str_collect = str.split(' ').collect do |item|
     reverse(item)
   end.join(" ")
   
-  puts str
+  puts str_collect
   rev_Arr.join(" ")
 end
